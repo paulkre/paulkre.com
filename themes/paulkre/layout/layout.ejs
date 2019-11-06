@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+
+		<title><% if (page.title) { %><%= page.title %> | <% } %><%= config.title %></title>
+		<title><%= `${page.title ? `${page.title} | ` : ""}${config.title}` %></title>
+
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+		<link
+			rel="stylesheet"
+			type="text/css"
+			href="<%= url_for("/assets/fonts/roboto-condensed-v16-latin/font-face.css") %>"
+		/>
+
+		<%- css('assets/css/main') %>
+
+	</head>	
+<body>
+	<div id="wrap">
+		<%- body %>
+	</div>
+	<%- js("assets/js/main") %>
+</body>
+</html>
