@@ -1,0 +1,14 @@
+@import "./header.scss";
+@import "./nav.scss";
+@import "./footer.scss";
+
+#wrap {
+  position: relative;
+
+  min-height: 100vh;
+
+  margin: 0 auto;
+  text-align: center;
+
+  padding: 0 16px;
+}

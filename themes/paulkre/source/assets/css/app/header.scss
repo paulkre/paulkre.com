@@ -1,0 +1,17 @@
+#header {
+  padding: 80px 0;
+  & > .intro {
+    // text-transform: uppercase;
+    color: #808080;
+    font-weight: 400;
+    font-size: 16px;
+    // letter-spacing: 1px;
+  }
+  & > a {
+    font-size: 42px;
+    font-weight: 700;
+
+    color: #101010;
+    letter-spacing: 2px;
+  }
+}

@@ -1,0 +1,11 @@
+.post-full {
+  & > .title {
+    font-size: 28px;
+    font-weight: 500;
+    color: #202020;
+    margin: 0 0 2rem 0;
+  }
+  & > .post-time {
+    margin-bottom: 2rem;
+  }
+}

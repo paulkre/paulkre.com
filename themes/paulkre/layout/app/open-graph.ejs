@@ -1,0 +1,21 @@
+<%
+var title = page.title || config.title
+var description = page.description || config.description
+var cleanPath = `/${path.replace("index.html", "")}`
+var url = page.permalink ? page.permalink.replace("index.html", "") : config.url
+var locale = page.language || config.language
+%>
+<meta name="description" content="<%= description %>">
+<meta property="og:type" content="website">
+<meta property="og:title" content="<%= title %>">
+<meta property="og:url" content="<%= url %>">
+<% if (config.title) { %>
+	<meta property="og:site_name" content="<%= config.title %>">
+<% } %>
+<% if (locale) { %>
+	<meta property="og:locale" content="<%= locale %>">
+<% } %>
+<% if (page.updated) { %>
+	<meta property="og:updated_time" content="<%- date_xml(page.updated) %>">
+<% } %>
+<meta name="twitter:card" content="summary">

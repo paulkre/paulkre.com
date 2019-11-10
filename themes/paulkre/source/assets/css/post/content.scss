@@ -1,0 +1,17 @@
+.post-content {
+  line-height: 1.7em;
+  text-align: left;
+
+  &.centered {
+    text-align: center;
+  }
+
+  & > p {
+    width: 100%;
+    max-width: $text-width;
+    margin: 0 auto;
+    &:not(:last-child) {
+      margin-bottom: 1rem;
+    }
+  }
+}

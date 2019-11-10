@@ -3,23 +3,23 @@
 	<head>
 		<meta charset="utf-8">
 
-		<title><% if (page.title) { %><%= page.title %> | <% } %><%= config.title %></title>
 		<title><%= `${page.title ? `${page.title} | ` : ""}${config.title}` %></title>
+
+		<%- partial("app/open-graph") %>
 
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-		<link
-			rel="stylesheet"
-			type="text/css"
-			href="<%= url_for("/assets/fonts/roboto-condensed-v16-latin/font-face.css") %>"
-		/>
+		<link rel="stylesheet" href="https://use.typekit.net/dsj6hfs.css">
 
 		<%- css('assets/css/main') %>
 
 	</head>	
 <body>
 	<div id="wrap">
+		<%- partial("app/header") %>
+		<%- partial("app/nav") %>
 		<%- body %>
+		<%- partial("app/footer") %>
 	</div>
 	<%- js("assets/js/main") %>
 </body>

@@ -1,0 +1,9 @@
+<% if (config.menu) { %>
+	<nav id="nav">
+		<% Object.keys(config.menu).forEach(label => { %>
+			<a href="<%- config.menu[label] %>">
+				<%= label %>
+			</a>
+		<% }) %>
+	</nav>
+<% } %>

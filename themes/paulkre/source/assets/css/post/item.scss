@@ -1,0 +1,19 @@
+.post-item {
+  & > .title {
+    font-size: 22px;
+    padding-bottom: 0.5rem;
+    & > a {
+      color: #202020;
+    }
+  }
+  & > .desc {
+    padding-top: 0.5rem;
+    margin: 0 auto;
+    max-width: $text-width;
+    font-size: 16px;
+    line-height: 1.7em;
+  }
+  &:not(:last-child) {
+    margin-bottom: 40px;
+  }
+}

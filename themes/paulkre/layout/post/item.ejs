@@ -1,0 +1,11 @@
+<div class="post-item">
+	<div class="title">
+		<a href="/<%- post.path %>">
+			<%= post.title %>
+		</a>
+	</div>
+	<%- partial("time", {post}) %>
+	<% if (post.description) { %>
+		<div class="desc"><%= post.description %></div>
+	<% } %>
+</div>
