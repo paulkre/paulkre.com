@@ -19,12 +19,12 @@ body {
 a {
   &:link,
   &:visited {
-    color: inherit;
+    color: $action-color;
     text-decoration: none;
   }
   &:hover,
   &:active {
-    color: inherit;
+    color: $hover-color;
   }
 }
 

@@ -9,16 +9,11 @@
     font-size: 16px;
     font-weight: 400;
     letter-spacing: 1px;
-    color: #808080;
-    &:hover,
-    &:active {
-      color: #b0b0b0;
-    }
     &:not(:last-child) {
       margin-right: 2rem;
     }
     &.active {
-      color: #b0b0b0 !important;
+      color: $hover-color !important;
     }
   }
 }
