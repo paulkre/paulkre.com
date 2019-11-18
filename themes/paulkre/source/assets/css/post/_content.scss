@@ -24,4 +24,22 @@
   & > ol {
     padding-left: #{$side-padding + 20px};
   }
+
+  & > .img {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: #{$img-width + 2 * $side-padding};
+    padding: 0 $side-padding;
+    margin: 0 auto;
+    &:not(:last-child) {
+      margin-bottom: 2rem;
+    }
+    &:not(:first-child) {
+      margin-top: 2rem;
+    }
+  }
+
+  img {
+    width: 100%;
+  }
 }
