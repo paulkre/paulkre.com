@@ -4,7 +4,9 @@ var description = page.description || config.description
 var cleanPath = `/${path.replace("index.html", "")}`
 var url = page.permalink ? page.permalink.replace("index.html", "") : config.url
 var locale = page.language || config.language
+var image = `${config.url}${page.image}`
 %>
+
 <meta name="description" content="<%= description %>">
 <meta property="og:type" content="website">
 <meta property="og:title" content="<%= title %>">
@@ -17,5 +19,10 @@ var locale = page.language || config.language
 <% } %>
 <% if (page.updated) { %>
 	<meta property="og:updated_time" content="<%- date_xml(page.updated) %>">
+<% } %>
+<% if (page.image) { %>
+	<meta property="og:image" content="<%- `${config.url}${page.image}` %>">
+	<meta property="og:image:width" content="<%- page.imageSize.width %>">
+	<meta property="og:image:height" content="<%- page.imageSize.height %>">
 <% } %>
 <meta name="twitter:card" content="summary">
