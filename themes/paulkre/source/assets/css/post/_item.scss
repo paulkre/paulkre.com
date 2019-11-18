@@ -1,15 +1,15 @@
 .post-item {
   & > .title {
     font-size: 22px;
-    padding-bottom: 1rem;
+    margin-bottom: 1rem;
     & > a {
       color: #202020;
     }
   }
   & > .desc {
-    margin: 0 auto;
+    margin: 0.8rem auto 0;
     max-width: $text-width;
-    padding: 0.8rem $side-padding 0;
+    padding: 0 $side-padding;
     font-size: 18px;
     line-height: 1.7em;
   }
