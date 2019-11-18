@@ -4,7 +4,6 @@ var description = page.description || config.description
 var cleanPath = `/${path.replace("index.html", "")}`
 var url = page.permalink ? page.permalink.replace("index.html", "") : config.url
 var locale = page.language || config.language
-var image = `${config.url}${page.image}`
 %>
 
 <meta name="description" content="<%= description %>">
